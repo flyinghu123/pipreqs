@@ -22,7 +22,7 @@ Options:
     --debug               Print debug information.
     --ignore <dirs>...    Ignore extra directories, each separated by a comma.
     --no-follow-links     Do not follow symbolic links in the project
-    --encoding <charset>  Use encoding parameter for file open
+    --encoding <charset>  Use encoding parameter for file open [default: utf-8]
     --savepath <file>     Save the list of requirements in the given file
     --print               Output the list of requirements in the standard
                           output.
@@ -409,7 +409,7 @@ def init(args):
                                  follow_links=follow_links)
     candidates = get_pkg_names(candidates)
     logging.debug("Found imports: " + ", ".join(candidates))
-    pypi_server = "https://pypi.python.org/pypi/"
+    pypi_server = "https://mirrors.tuna.tsinghua.edu.cn/pypi/"
     proxy = None
     if args["--pypi-server"]:
         pypi_server = args["--pypi-server"]

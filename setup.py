@@ -21,10 +21,11 @@ requirements = [
 ]
 
 setup(
-    name='pipreqs',
+    name='pipreqs-zh',
     version=__version__,
     description='Pip requirements.txt generator based on imports in project',
     long_description=readme + '\n\n' + history,
+    long_description_content_type="text/plain",
     author='Vadim Kravcenko',
     author_email='vadim.kravcenko@gmail.com',
     url='https://github.com/bndr/pipreqs',
